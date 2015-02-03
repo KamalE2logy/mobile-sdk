@@ -1,0 +1,15 @@
+com.mappedin.api
+com.mappedin.api.objects
+com.mappedin.sdk
+com.mappedin.sdk.components
+com.mappedin.sdk.components.slidingpanel
+com.mappedin.sdk.interfaces
+com.mappedin.sdk.internal.androidalliance.edgeeffectoverride
+com.mappedin.sdk.internal.google.maps.android
+com.mappedin.sdk.internal.nineoldandroids.animation
+com.mappedin.sdk.internal.nineoldandroids.util
+com.mappedin.sdk.internal.nineoldandroids.view
+com.mappedin.sdk.internal.nineoldandroids.view.animation
+com.mappedin.sdk.internal.sothree.slidinguppanel
+com.mappedin.sdk.internal.viewpagerindicator
+com.mappedin.sdk.lists.adapters
