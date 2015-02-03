@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".ExampleActivity" >
+
+        <Button
+            android:id="@+id/buttonMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View MappedIn Mall" />
+
+        <Button
+            android:id="@+id/buttonMapMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show/Hide Map Markers" />
+
+        <Button
+            android:id="@+id/buttonMapFloors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Map Floors" />
+
+        <Button
+            android:id="@+id/buttonMapLocations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map Locations" />
+
+        <Button
+            android:id="@+id/buttonSearchLocations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Locations" />
+    </LinearLayout>
+
+</ScrollView>

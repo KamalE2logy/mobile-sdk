@@ -1,0 +1,57 @@
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+*.iml
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# ignore all bin directories
+# matches "bin" and "gen" in any subfolder
+bin/
+gen/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# ignore all target directories
+target/
+
+# ignore all files ending with ~
+*~ 
+
+# */project.properties
+
+*.pydevproject
+.metadata
+.gradle
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+.recommenders

@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- MappedIn Map Activity theme -->
+    <!-- 
+    	The MappedInLight theme is defined in the MappedIn SDK. You are free to customize your own theme.
+    	However it is recommended that you always keep `windowActionBarOverlay` set to true for optimal functionality with the Sliding Up Panel. 
+    -->
+    <style name="ExampleMappedInMapTheme" parent="@style/MappedInLight">
+        
+        <!-- The following four attributes must be set in every theme that will be used for theming MappedInMapActivity of any of its children -->
+        <item name="edgeEffectColor">@color/mappedin_orange</item>
+        <item name="pageBackgroundColor">@color/mappedin_list_background</item>
+        <item name="selectableBackground">@drawable/selectable_background_action_light</item>
+        <item name="slidingPanelBackground">@drawable/sliding_panel_background_light</item>
+        
+    	<item name="windowActionBarOverlay">true</item>
+        <item name="android:windowActionBarOverlay" tools:targetApi="11">true</item>
+    </style>
+
+</resources>

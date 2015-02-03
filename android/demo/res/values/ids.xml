@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="button_demo_map"/>
+    <item type="id" name="button_demo_washrooms"/>
+    <item type="id" name="button_demo_events"/>
+    <item type="id" name="button_demo_list_toggle"/>
+    
+    <item type="id" name="action_search"/>
+</resources>
