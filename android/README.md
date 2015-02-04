@@ -7,7 +7,7 @@ Currently this SDK is in alpha stage and there might be some breaking changes in
 
 #### TRY IT OUT
 
-1. Before you can use the SDK, please obtain a MappedIn API key from [here](http://portal.mappedin.com/client-key/)
+1. Before you can use the SDK, please obtain a MappedIn API key by contacting support@mappedin.ca
 2. You will also need to obtain a Google Maps Android API v2 key from the [Google Deveoper Console](http://console.developers.google.com/)
 3. Check-out the demo app on how to setup the keys and how to use the various MappedIn SDK components in your app.
     - Both the MappedIn API key and Google Maps Android API v2 key need to be placed in the `AndroidManifest.xml` file
@@ -20,12 +20,47 @@ Currently this SDK is in alpha stage and there might be some breaking changes in
 #### THEMEING
 
 When creating custom themes for MappedInMapActivity, you will need to set the following four attributes
+
 1. `edgeEffectColor`
 2. `pageBackgroundColor`
 3. `selectableBackground`
 4. `slidingPanelBackground`
 
-Sample values for these attributes are available in the demo app's _styles.xml_ file.
+Sample values for these attributes are available in the demo app's [_styles.xml_](https://github.com/MappedIn/mobile-sdk/blob/master/android/demo/res/values/styles.xml) file.
+
+#### GRADLE & ANDROID STUDIO
+
+Since the SDK is being provided in [AAR](http://tools.android.com/tech-docs/new-build-system/aar-format) format, you will need to reference the `aar` file plus all of the SDK's dependencies in your _build.gradle_ file like so:
+
+```
+dependencies {
+	// The following are the dependencies needed to run MappedIn SDK
+	compile 'com.android.support:support-v4:20.0.0'
+	compile 'com.android.support:appcompat-v7:20.0.0'
+	compile 'com.android.support:gridlayout-v7:20.0.0'
+	compile 'com.google.android.gms:play-services-maps:6.5.87'
+	compile 'com.flaviofaria:kenburnsview:1.0.6'
+	compile 'com.squareup.okhttp:okhttp:2.0.0'
+	compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+	compile 'com.squareup.okio:okio:1.0.0'
+	compile 'com.squareup.picasso:picasso:2.3.2'
+
+	// Loading the MappedIn SDK
+	compile 'com.mappedin:MappedIn-SDK-0.1@aar'
+}
+```
+
+It is recommended that you place the `aar` file in your app module's `libs` folder and set the folder as a repository in _build.gradle_ like so:
+
+```
+repositories {
+	flatDir {
+		dirs 'libs'
+	}
+}
+```
+
+You may use the the demo app's [_build.gradle_](https://github.com/MappedIn/mobile-sdk/blob/master/android/demo/build.gradle) file as a reference.
 
 #### AUTHOR
 
@@ -33,7 +68,7 @@ Hassaan Aamir, hassaan@mappedin.ca
 
 #### LICENSE
 
-Copyright 2014 MappedIn 
+Copyright 2015 MappedIn 
 
 Except as otherwise noted, the MappedIn SDK for Android is licensed under the Apache License, Version 2.0 (the "License"); you may not use this SDK except in compliance with the License. You may obtain a copy of the License at
 
