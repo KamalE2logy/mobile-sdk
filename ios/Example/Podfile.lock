@@ -1,0 +1,20 @@
+PODS:
+  - Expecta (0.3.2)
+  - MappedIn (0.3.1)
+  - Specta (0.2.1)
+
+DEPENDENCIES:
+  - Expecta
+  - MappedIn (from `../SDK`)
+  - Specta (~> 0.2.1)
+
+EXTERNAL SOURCES:
+  MappedIn:
+    :path: ../SDK
+
+SPEC CHECKSUMS:
+  Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
+  MappedIn: 6712aa94f351c6141a7c8cf2687210c6419b5b9c
+  Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
+
+COCOAPODS: 0.35.0

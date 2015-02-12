@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KCs-KN-iMn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Demo View Controller - MappedIn Demo-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MIDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="API Key" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z7t-nb-3HD">
+                                <rect key="frame" x="20" y="122" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Secret Key" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lk2-zX-XhH">
+                                <rect key="frame" x="20" y="160" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2a-bD-9ZQ">
+                                <rect key="frame" x="20" y="198" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yed-7h-g81"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Venue Slug" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vV4-38-x5l">
+                                <rect key="frame" x="20" y="84" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z7t-nb-3HD" firstAttribute="leading" secondItem="vV4-38-x5l" secondAttribute="leading" id="3Q1-yV-10m"/>
+                            <constraint firstItem="Z7t-nb-3HD" firstAttribute="top" secondItem="vV4-38-x5l" secondAttribute="bottom" constant="8" id="65m-5v-cu5"/>
+                            <constraint firstItem="W2a-bD-9ZQ" firstAttribute="top" secondItem="lk2-zX-XhH" secondAttribute="bottom" constant="8" id="7GE-8h-jb1"/>
+                            <constraint firstItem="lk2-zX-XhH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="CR2-da-Wvr"/>
+                            <constraint firstItem="lk2-zX-XhH" firstAttribute="leading" secondItem="Z7t-nb-3HD" secondAttribute="leading" id="Q4x-69-Ybf"/>
+                            <constraint firstAttribute="trailing" secondItem="lk2-zX-XhH" secondAttribute="trailing" constant="20" id="VZx-sq-zUp"/>
+                            <constraint firstItem="lk2-zX-XhH" firstAttribute="top" secondItem="Z7t-nb-3HD" secondAttribute="bottom" constant="8" id="WX7-wF-35H"/>
+                            <constraint firstItem="Z7t-nb-3HD" firstAttribute="trailing" secondItem="vV4-38-x5l" secondAttribute="trailing" id="X6B-EW-PMG"/>
+                            <constraint firstItem="Z7t-nb-3HD" firstAttribute="centerX" secondItem="lk2-zX-XhH" secondAttribute="centerX" id="alJ-fs-wnM"/>
+                            <constraint firstItem="W2a-bD-9ZQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="caf-bt-znZ"/>
+                            <constraint firstAttribute="trailing" secondItem="W2a-bD-9ZQ" secondAttribute="trailing" constant="20" symbolic="YES" id="h0t-oF-4js"/>
+                            <constraint firstItem="vV4-38-x5l" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="kgj-7u-2SP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MappedIn Demo" id="0a4-0B-lC9"/>
+                    <connections>
+                        <outlet property="apiKeyField" destination="Z7t-nb-3HD" id="HGp-3Z-7DS"/>
+                        <outlet property="secretKeyField" destination="lk2-zX-XhH" id="WBb-1T-fZA"/>
+                        <outlet property="venueSlugField" destination="vV4-38-x5l" id="XDu-lG-u7j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="723" y="424"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gVS-xI-pnK">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="KCs-KN-iMn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZtJ-ZQ-EAw">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="oE4-eo-OOr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qoa-mq-WRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="424"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,11 @@
+target 'MappedInDemo' do
+  pod 'MappedIn', :path => '../SDK'
+  
+  # use the following to target a specific version of the SDK (recommended for third-party developers):
+  # pod 'MappedIn', :git => '../', :tag => 'REPLACE_WITH_GIT_TAG'
+
+  target 'Tests', :exclusive => true do
+    pod 'Specta', '~> 0.2.1'
+    pod 'Expecta'
+  end
+end
